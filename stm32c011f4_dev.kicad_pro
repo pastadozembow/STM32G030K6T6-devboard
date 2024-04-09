@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.95,
-          "width": 0.9
+          "height": 0.5,
+          "width": 0.6
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -52,7 +52,10 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "malformed_courtyard|30775000|47487500|ead1e427-2ee4-4da1-9611-1ba315bd611c|00000000-0000-0000-0000-000000000000",
+        "malformed_courtyard|40835000|39787500|ead1e427-2ee4-4da1-9611-1ba315bd611c|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -465,7 +468,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "KiCAD project/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
