@@ -4182,12 +4182,6 @@
 		(uuid "beb6cfa6-ddc0-403d-b28d-8b9641fdf702")
 	)
 	(junction
-		(at 38.1 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9f9f031-c7e8-4f41-87f8-dfebbf76c05f")
-	)
-	(junction
 		(at 86.36 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4462,16 +4456,6 @@
 			(type default)
 		)
 		(uuid "aaf5ba18-1d85-4bff-9797-43cec37198a7")
-	)
-	(wire
-		(pts
-			(xy 38.1 149.86) (xy 38.1 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8cdddbc-a5db-45b5-9d34-f983627d6dfb")
 	)
 	(wire
 		(pts
@@ -7400,6 +7384,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 30.48 149.86 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4790d95d-9d50-4041-8604-184de7b3aeb6")
+		(property "Reference" "#PWR029"
+			(at 24.13 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 26.67 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 30.48 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4a03aaf-c7f3-4c2c-97d8-06d65e105c60")
+		)
+		(instances
+			(project "stm32c011f4_dev"
+				(path "/4e1327ae-43d4-4d8e-a3e1-cdd19cf0de2a"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 156.21 138.43 90)
 		(unit 1)
@@ -7870,6 +7921,73 @@
 			(project "stm32c011f4_dev"
 				(path "/4e1327ae-43d4-4d8e-a3e1-cdd19cf0de2a"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 34.29 149.86 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "647b3e00-c783-4424-9448-b7b0d490b609")
+		(property "Reference" "R10"
+			(at 34.29 151.892 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 34.29 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 34.29 148.082 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 34.29 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08b7dc02-542e-4aa5-aa0a-284804cd3399")
+		)
+		(pin "2"
+			(uuid "3201fc85-90a0-49ba-a045-5a6afba2f79c")
+		)
+		(instances
+			(project "stm32c011f4_dev"
+				(path "/4e1327ae-43d4-4d8e-a3e1-cdd19cf0de2a"
+					(reference "R10")
 					(unit 1)
 				)
 			)
